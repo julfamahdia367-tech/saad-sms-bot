@@ -17,7 +17,7 @@ def contact_admin(message):
     # ইনলাইন বাটন তৈরি (মেসেজের সাথে লেগে থাকবে)
     inline_markup = types.InlineKeyboardMarkup()
     # 'your_username' এর জায়গায় আপনার আসল ইউজারনেম দিন (যেমন: https://t.me/@SaadsmsproBot)
-    support_link = types.InlineKeyboardButton(text="Contact Admin", url="https://t.me/your_username")
+    support_link = types.InlineKeyboardButton(text="Contact Admin", url="https://t.me/@SaadsmsproBot")
     inline_markup.add(support_link)
     
     bot.send_message(message.chat.id, "যেকোনো সমস্যার জন্য নিচের বাটনে ক্লিক করে এডমিনের সাথে যোগাযোগ করুন:", reply_markup=inline_markup)
