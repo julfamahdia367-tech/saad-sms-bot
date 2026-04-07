@@ -37,7 +37,7 @@ def send_welcome(message):
 @bot.message_handler(func=lambda message: message.text == '💬 Support')
 def support(message):
     # 'your_username' এর জায়গায় @ ছাড়া আপনার ইউজারনেম দিন
-    url = "https://t.me/@SaadsmsproBot" 
+    url = "https://t.me/Saad_Sms_Admin" 
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton(text="Contact Admin", url=url))
     bot.send_message(message.chat.id, "যেকোনো সমস্যার জন্য নিচের বাটনে ক্লিক করুন:", reply_markup=markup)
